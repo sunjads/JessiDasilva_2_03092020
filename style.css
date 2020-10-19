@@ -1124,11 +1124,9 @@ footer ul li{
     }
     /*partie footer*/
     footer {
-        display: flex;
-        flex-direction: row;
+        display:flex;
         justify-content: space-between;
         background:  #F2F2F2;
-        padding: 30px 0px 10px 40px;
         width:100%;
         height: auto;
     }
@@ -1144,8 +1142,11 @@ footer ul li{
         list-style-type: none;
         font-size: 0.8em;
         margin-top: 5px;
-    }    
+    }  
+    #propos{
+        padding-left: 25px;
+    }  
     #assistance{
-      padding-right: 250px;
-      background-color: #0065FC;
+      padding-right: 400px;
+     
 }
