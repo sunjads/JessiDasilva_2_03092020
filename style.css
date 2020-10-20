@@ -98,7 +98,7 @@ nav a:hover {
 /* section avec barre de recherche*/
 section{
     width: 80vw;
-    height: 25vh;
+    height: 28vh;
     margin:auto;
 }
 section h1{
@@ -182,7 +182,6 @@ form{
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: max-content;
 }
 article h2 {
     font-size: 0.9em;
@@ -345,11 +344,14 @@ aside a:hover{
     text-decoration: none;  
 }
 .description{  
-    margin: 10px 0px 0px 15px;   
+    margin: 10px 0px 0px 10px;   
     font-size: 0.9em;
 }
 .description h3{
-    width: 80%;
+    width: 100%;
+}
+.description p {
+    padding-left: 0px;
 }
 aside .rating{
     display: flex;
@@ -618,6 +620,10 @@ footer ul li{
         margin-top: 0px;
         padding: 30px 0px 0px 0px;
     }
+    nav ul li:nth-child(1):hover{
+        border-top: none;
+        margin-top: -10px;
+    }
     /* section avec barre de recherche*/
     section{
         width: 80vw;
@@ -728,7 +734,6 @@ footer ul li{
         margin: 0;
         width: 100vw;
     }
-        
     .carte-hebergement ul li{
         margin: 15px 15px 0px 10px;
         width: 30vw;
@@ -906,19 +911,22 @@ footer ul li{
     }        
 }
 @media screen and (min-width: 1025px){
+    body {
+        overflow-x:hidden;
+    }
 /*partie du menu dans header*/
     header, nav{
         height: 11vh;
         width: 100vw;
     }
     header, article{
-        padding-left: 15px;
-    }
-    section h1{
         padding-left: 20px;
     }
-    section p,form{
+    section h1{
         padding-left: 30px;
+    }
+    section p,form{
+        padding-left: 40px;
     }
 
     nav ul li:nth-child(1){
@@ -948,6 +956,10 @@ footer ul li{
         grid-row-start: 1;
         grid-row-end: 2;
     }
+    nav ul li:nth-child(1):hover{
+        border-top: none;
+        margin-top: -10px;
+    }
 /*partie article "filtres*/
     article h2 {
         font-size: 0.9em;
@@ -964,7 +976,7 @@ footer ul li{
     #section1{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: auto;
         height: auto;
 
@@ -984,17 +996,13 @@ footer ul li{
 
     .carte-hebergement ul{
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
         padding: 0;
-        margin: 0;
-        width: 63vw;
+        width:100%;
         border-radius: 20px;
     }
     .carte-hebergement ul li{
-        margin: 15px 0px 0px 10px;
-        width: 19vw;
+        width: 29%;
         height: 26vh;
     }
     .carte-hebergement h3{
@@ -1024,7 +1032,6 @@ footer ul li{
         border-radius: 18px;
         height: auto;
         padding-bottom: 20px;
-        margin-left: -10px;
     }
     #titre-icone {
         margin-top: 30px;
@@ -1075,12 +1082,11 @@ footer ul li{
     }
     #section2 h2{
         font-size: 1em;
-        padding-left: 20px;
+        padding-left: 35px;
     }
     #sous-section2{
         display: flex;
         flex-direction: row;
-        align-items: space-around;
         flex-wrap: nowrap;
         align-items: center;
         width: 100vw;
@@ -1089,32 +1095,32 @@ footer ul li{
     /*partie grande-img*/
     .grande-img{
         margin-bottom: 30px;
-        width: 23vw;
+        width: 22vw;
         
     }
     .grande-img img{
-        width: 23vw;
+        width: 22vw;
         height: 55vh;
         box-shadow: rgb(228, 224, 224) 2px 2px 2px 0px;
         border-radius:  18px 18px 0px 0px;
     }
     .grande-img h3{
-        width: 23vw;
+        width: 22vw;
         font-size: 0.8em;
-        padding: 10px 0px 12px 10px;
+        padding: 5px 0px 15px 10px;
     }
     /*partie petite-img*/
     .petite-img #special1{
-        width: 23vw;
-        height: 23vh;
+        width: 22vw;
+        height: 22vh;
     }
 
     .petite-img #special2{
         height: 15vh;
-        width: 23vw;
+        width: 22vw;
     }
     .petite-img img{
-        width: 23vw;
+        width: 22vw;
         height: 19vh;
         box-shadow: rgb(228, 224, 224) 2px 2px 2px 0px;
         border-radius:  15px 15px 0px 0px;
@@ -1123,7 +1129,7 @@ footer ul li{
     .petite-img h3{
         padding: 5px 0px 15px 10px;
         font-size: 0.8em;
-        width: 23vw;
+        width: 22vw;
         height: 5vh;
         margin-bottom: 55px;
     }
