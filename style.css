@@ -1211,6 +1211,7 @@ footer ul li{
         width: 100vw;
         background-color: white;
         height: 500px;
+        margin-bottom: 60px;
     }
     #section2 h2{
         font-size: 1em;
