@@ -10,6 +10,9 @@
     margin:0;
     padding: 0;
 }
+body{
+overflow-x: hidden;
+}
 header{
     width: 100vw;
     height: 18vh;
@@ -509,7 +512,7 @@ h4 a:hover{
 #section2{
     width: auto;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     padding: 0;
 }
 #section2 h2{
@@ -525,6 +528,7 @@ h4 a:hover{
     width: 100vw;
     height: 172vh;
     padding: 0;
+    margin-bottom: 15px;
 }
 /*partie grande-img*/
 .grande-img{
@@ -916,6 +920,7 @@ footer ul li{
     /*partie activites à Marseille*/
     #section2{
         width: 100vw;
+        margin: 0;
     }
     #section2 h2{
         font-size: 1.2em;
@@ -996,9 +1001,6 @@ footer ul li{
     }        
 }
 @media screen and (min-width: 1025px){
-    body {
-        overflow-x:hidden;
-    }
     #lapage{
         max-width: 1500px;
         margin: auto;
@@ -1211,7 +1213,6 @@ footer ul li{
         width: 100vw;
         background-color: white;
         height: 500px;
-        margin-bottom: 60px;
     }
     #section2 h2{
         font-size: 1em;
@@ -1230,6 +1231,7 @@ footer ul li{
         width: 100%;
         max-width: 1480px;
         max-height: 455px;
+        margin-bottom: 30px;
     }
     /*partie grande-img*/
     .grande-img, .petite-img{
